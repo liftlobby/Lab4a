@@ -6,9 +6,19 @@
     <title>Lab4a</title>
 </head>
 <body>
-    <p>Hello there</p>
     <div id="myElement">
         <p>Welcome to my website!</p>
     </div>
+
+    <script>
+        var element = document.getElementById("myElement");
+        element.addEventListener("click", function() 
+        {
+            element.style.backgroundColor = "red";
+            let paragraph = element.querySelector('p');
+            paragraph.textContent = "Hello there!";
+
+        });
+    </script>
 </body>
 </html>
